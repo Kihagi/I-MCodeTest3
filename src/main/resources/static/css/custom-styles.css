@@ -1,0 +1,226 @@
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.customer-form,
+.customer-form .card-box
+{
+    min-height: 430px !important;
+}
+
+.list-group-item {
+    border-color: transparent !important;
+    padding: .4rem 1.25rem !important;
+}
+
+#file-errors {
+    /*display: inline-block !important;*/
+    padding: 5px 26px !important;
+    display: none;
+}
+
+#default-check-error {
+    /*display: inline-block !important;*/
+    padding: 5px 26px !important;
+    display: none;
+}
+
+#default-search-spinner {
+    display: none;
+}
+
+#batch-success {
+    display: none;
+}
+
+#batch-crb-success {
+    display: none;
+}
+
+#batch-crb-error {
+    display: none;
+}
+
+#no-character {
+    display: none;
+}
+
+#no-alt-contacts {
+    display: none;
+}
+
+#no-verification-data {
+    display: none;
+}
+
+#no-credit-data {
+    display: none;
+}
+
+#no-module {
+    display: none;
+}
+
+#no-tips {
+    display: none;
+}
+
+#no-quiz {
+    display: none;
+}
+
+
+#no-customer-selected {
+    display: none;
+}
+
+#details-row {
+    display: none;
+}
+
+#no-iprs-data {
+    display: none;
+}
+
+#no-batch-job {
+    display: none;
+}
+
+#no-mls-data {
+    display: none;
+}
+
+#no-statement-analytics {
+    display: none;
+}
+
+#no-message-logs {
+    display: none;
+}
+
+#registration-progress {
+    display: none;
+}
+
+#crb-check-progress {
+    display: none;
+}
+
+#form-characters {
+    display: none;
+}
+
+#billing-info-view {
+    display: none;
+}
+
+#no-groups {
+    display: none;
+}
+
+/*
+Dropzone scripts
+ */
+#actions {
+    margin: 2em 0;
+}
+
+/* Mimic table appearance */
+div.table {
+    display: table;
+}
+div.table .file-row {
+    display: table-row;
+}
+div.table .file-row > div {
+    display: table-cell;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    padding: 8px;
+}
+div.table .file-row:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* The total progress gets shown by event listeners */
+#total-progress {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+/* Hide the progress bar when finished */
+#previews .file-row.dz-success .dropzone-progress {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+/* Hide the view analytics button initially */
+#previews .file-row .view-analytics {
+    display: none;
+}
+
+/* Hide the start and cancel buttons and show the delete button */
+#previews .file-row.dz-success .start,
+#previews .file-row.dz-success .cancel {
+    display: none;
+}
+
+#previews .file-row.dz-success .view-analytics {
+    display: block;
+}
+
+/*
+Dropzone progress css
+ */
+.dropzone-progress {
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+}
+.dropzone-progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #428bca;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease
+}
+
+.dropzone-progress-striped .dropzone-progress-bar {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 40px 40px
+}
+
+.dropzone-progress.active .dropzone-progress-bar {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite
+}
+
+.dropzone-progress-bar-success {
+    background-color: #5cb85c
+}
+
+.dropzone-progress-striped .dropzone-progress-bar-success {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)
+}
+
+.dropzone-progress-bar-info {
+    background-color: #5bc0de
+}
+
+.custom .pagination {
+    display: inline !important;
+}

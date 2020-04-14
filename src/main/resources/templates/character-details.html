@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" layout:decorate="~{layouts/dashboard-layout}">
+
+<head>
+    <title>Character Details View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+<div layout:fragment="content">
+    <!-- ============================================================== -->
+    <!-- Start Content here -->
+    <!-- ============================================================== -->
+    <div class="wrapper">
+        <div class="container">
+
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="page-title">Character Details View</h4>
+                    <div class="pull-right m-t-3 m-b-15" id="character-favorite">
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" id="character_id" th:value="${characterId}" />
+
+            <div class="loader-wrapper">
+                <div class="loader"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 col-xl-4" id="profile-card" style="display: none;">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-20">Character Profile</h4>
+                        <div class="m-t-20" id="character-profile-view">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-12 col-xl-8" id="films-card" style="display: none;">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-20">Films</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="character-films-table">
+                                <thead class="thead-default">
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Episode Id</th>
+                                    <th>Director</th>
+                                    <th>Producer</th>
+                                    <th>Release Date</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-4" id="species-card" style="display: none;">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-20">Species</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="character-species-table">
+                                <thead class="thead-default">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>classification</th>
+                                    <th>Designation</th>
+                                    <th>Average height</th>
+                                    <th>Average Lifespan</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-4"  id="vehicles-card" style="display: none;">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-20">Vehicles</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="character-vehicles-table">
+                                <thead class="thead-default">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Model</th>
+                                    <th>Manufacturer</th>
+                                    <th>Cost</th>
+                                    <th>Length</th>
+                                    <th>Speed</th>
+                                    <th>Crew</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-4" id="starships-card" style="display: none;">
+                    <div class="card-box">
+                        <h4 class="header-title m-t-0 m-b-20">Starships</h4>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered" id="character-startships-table">
+                                <thead class="thead-default">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Model</th>
+                                    <th>Manufacturer</th>
+                                    <th>Cost</th>
+                                    <th>Length</th>
+                                    <th>Speed</th>
+                                    <th>Crew</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End wrapper -->
+
+</div>
+</body>
