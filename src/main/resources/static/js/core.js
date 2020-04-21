@@ -377,11 +377,11 @@ $(document).ready(function () {
 
     $("body").on('click', '.view-character', function () {
         var character_url = $(this).data('id');
-        var character_id = character_url.charAt(character_url.length - 2);
-        console.log('character id is', character_id);
+        //var character_id = character_url.charAt(character_url.length - 2);
+        //console.log('character id is', character_id);
 
         window.open(
-            protocol + '//' + hostname + (location.port ? ':' + location.port : '') + '/details?id=' + character_id,
+            protocol + '//' + hostname + (location.port ? ':' + location.port : '') + '/details?id=' + character_url,
             '_blank' // <- This is what makes it open in a new window.
         );
     });

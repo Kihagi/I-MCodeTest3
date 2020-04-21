@@ -90,12 +90,9 @@ public class MainController {
     @GetMapping("/characters")
     public ResponseEntity<Object> fetchCustomer(@Valid @NotBlank @RequestParam String id) throws IOException {
 
-        Optional<CharacterDTO> optionalCharacterDTO = externalApiRequestService
-                .getCharacterById(Long.parseLong(id));
-        if (!optionalCharacterDTO.isPresent()) {
-            throw new GenericRuntimeException(HttpStatus.INTERNAL_SERVER_ERROR.value(), "An error occurred while fetching character");
-        }
-        CharacterDTO characterDTO = optionalCharacterDTO.get();
+        logger.info("The url received :::::::::::: {}", id);
+
+        CharacterDTO characterDTO = externalApiRequestService.getCharacterByUrl(id);
         characterDTO.setFavorite(checkFavoriteCharacterExists(characterDTO.getUrl()));
 
         //Prepare character details dto

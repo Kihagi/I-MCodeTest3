@@ -68,6 +68,21 @@ public class ExternalApiRequestServiceImpl implements ExternalApiRequestService 
     }
 
     @Override
+    public CharacterDTO getCharacterByUrl(String url) {
+        HttpHeaders headers = new HttpHeaders();
+        HttpEntity<String> request = new HttpEntity<>(headers);
+        CharacterDTO characterDTO = null;
+        try {
+            ResponseEntity<CharacterDTO> response = restTemplate.exchange(
+                    url, HttpMethod.GET, request, CharacterDTO.class);
+            characterDTO = response.getBody();
+        } catch (HttpClientErrorException | HttpServerErrorException httpClientOrServerExc) {
+            logger.error("Fetch character request encountered error {}", httpClientOrServerExc.getMessage());
+        }
+        return characterDTO;
+    }
+
+    @Override
     public FilmDTO getFilmByUrl(String url) {
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> request = new HttpEntity<>(headers);

@@ -13,6 +13,8 @@ public interface ExternalApiRequestService {
 
     Optional<AllCharactersDTO> getAllCharacters(int page);
 
+    CharacterDTO getCharacterByUrl(String url);
+
     FilmDTO getFilmByUrl(String url);
 
     SpeciesDTO getSpeciesByUrl(String url);
